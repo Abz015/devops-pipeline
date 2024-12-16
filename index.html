@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD Sports - Men's Collection</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        header nav a {
+            color: #fff;
+            margin-left: 20px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #4ecdc4;
+        }
+
+        /* Search Bar */
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 15px 0;
+        }
+
+        .search-bar input {
+            width: 100%;
+            max-width: 350px;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .search-bar button {
+            background-color: #4ecdc4;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            margin-left: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-bar button:hover {
+            background-color: #36b9a7;
+        }
+
+        /* Navigation Menu */
+        nav.menu {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        nav.menu a {
+            margin: 0 15px;
+            font-size: 1rem;
+            color: #000;
+            transition: color 0.3s ease;
+        }
+
+        nav.menu a:hover {
+            color: #007bff;
+        }
+
+        /* Banner Section */
+        .banner {
+            background-color: #ffdd00;
+            color: #000;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://i8.amplience.net/i/jpl/desktop-top-banner-1920x840-mens-9-min-cd56bc2049565441a00d76f027677e58?qlt=80&fmt=auto') no-repeat center/cover;
+            height: 400px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background-color: #fff;
+            color: #000;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 30px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            background-color: #fff;
+        }
+
+        .product-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .product-card img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .product-card h3 {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">JD Sports</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Sale</a>
+        </nav>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search for products...">
+        <button>Search</button>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="menu">
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Accessories</a>
+        <a href="#">Offers</a>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        FREE STANDARD DELIVERY ON ORDERS OVER £70! | CALLING ALL STUDENTS! GET 10% OFF
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>New Season, New Style</h1>
+        <button>Shop Now</button>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="product-card">
+            <img src="https://i8.amplience.net/i/jpl/jd_54169_al?w=100&h=100" alt="Jacket">
+            <h3>Men's Jacket</h3>
+        </div>
+        <div class="product-card">
+            <img src="https://i8.amplience.net/i/jpl/jd_54169_al?w=100&h=100" alt="Shoes">
+            <h3>Men's Shoes</h3>
+        </div>
+        <div class="product-card">
+            <img src="https://i8.amplience.net/i/jpl/jd_54169_al?w=100&h=100" alt="Cap">
+            <h3>Men's Cap</h3>
+        </div>
+        <div class="product-card">
+            <img src="https://i8.amplience.net/i/jpl/jd_54169_al?w=100&h=100" alt="Bag">
+            <h3>Men's Bag</h3>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 JD Sports. All rights reserved.
+    </footer>
+</body>
+</html>

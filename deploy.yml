@@ -1,0 +1,30 @@
+---
+- name: Deploy Web Page to Apache on ECS Instance
+  hosts: localhost
+  become: yes
+
+  tasks:
+    - name: Ensure Apache HTTP Server is Installed
+      yum:
+        name: httpd
+        state: present
+
+    - name: Start and Enable Apache
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+
+    - name: Copy Web Files to Apache Document Root
+      copy:
+        src: "{{ playbook_dir }}/"
+        dest: /var/www/html/
+        remote_src: no
+        owner: apache
+        group: apache
+        mode: '0644'
+
+    - name: Restart Apache
+      service:
+        name: httpd
+        state: restarted
