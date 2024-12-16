@@ -1,7 +1,7 @@
 ---
 - name: Deploy Web Page to Apache on ECS Instance
   hosts: localhost
-  become: yes
+  become: yes  # Enables sudo for tasks without prompting for a password
 
   tasks:
     - name: Ensure Apache HTTP Server is Installed
@@ -19,7 +19,6 @@
       copy:
         src: "{{ playbook_dir }}/"
         dest: /var/www/html/
-        remote_src: no
         owner: apache
         group: apache
         mode: '0644'
