@@ -6,7 +6,7 @@ pipeline {
     }
 
     stages {
-        stage('Run Ansible Playbook') {
+        stage('Run Ansible Playbook v2') {
             steps {
                 echo 'Running Ansible Playbook...'
                 sh '''
